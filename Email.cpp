@@ -3,3 +3,21 @@
 //
 
 #include "Email.h"
+
+struct Email::CompWhoDateSubject{
+    bool operator()() {
+        return true;
+    }
+};
+
+struct Email::CompDateWhoSubject {
+    bool operator()() {
+        return true;
+    }
+};
+
+struct Email::CompSubjectWheDate {
+    bool operator()() {
+        return true;
+    }
+};

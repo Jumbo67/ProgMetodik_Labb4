@@ -13,6 +13,14 @@ class Email {
     std::string date;
     std::string subject;
 
+    friend struct CompWhoDateSubject;
+    friend struct CompDateWhoSubject;
+    friend struct CompSubjectWheDate;
+
+public:
+
+    friend operator()<<
+
 
 
 
