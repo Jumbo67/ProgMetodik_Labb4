@@ -6,18 +6,15 @@
 #include "MailBox.h"
 
 void MailBox::sortWho() {
-    CompWhoDateSubject comp;
-    std::sort(emails.begin(), emails.end(), comp);
+    std::sort(emails.begin(), emails.end(), CompWhoDateSubject());
 }
 
 void MailBox::sortDate() {
-    CompDateWhoSubject comp;
-    std::sort(emails.begin(), emails.end(), comp);
+    std::sort(emails.begin(), emails.end(), CompDateWhoSubject());
 }
 
 void MailBox::sortSubject() {
-    CompSubjectWheDate comp;
-    std::sort(emails.begin(), emails.end(), comp);
+    std::sort(emails.begin(), emails.end(), CompSubjectWheDate());
 }
 
 std::vector<Email>::iterator MailBox::begin() {
